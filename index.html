@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario Prado Waffenmechaniker</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+    <nav class="navbar">
+        <button class="contacto-btn" onclick="toggleContacto()">Kontaktinformationen</button>
+        <div class="navbar-header">
+            <h1>Dario Prado</h1> <!-- Tu nombre en el Navbar -->
+        </div>
+        <div id="contacto-dropdown" class="contacto-dropdown">
+            <p>Adresse: Torgauer Straße 48, 04315, Leipzig.</p>
+            <p>Telefon: +49 1512 4164649</p>
+            <p>Linkedin: <a href="https://www.linkedin.com/in/dario-prado-penaloza/">Link</a></p>
+            <p>Nationalität: Chilenisch</p>
+            <p>E-Mail: Cattus@Live.cl</p>
+            
+        </div>
+    </nav>
+
+
+    <!-- Contenido de tu página -->
+    <h1 style="font-size: 50px;">Zeugnisse</h1>
+    <p class="texto" style="font-size: 30px;">Klicken Sie auf die Bilder, um sie zu vergrößern</p>
+    <!-- Primer diploma -->
+    <div class="diploma-container">
+        <img id="imagen1" class="diploma" src="IMG/1.jpg" alt="Diploma 1" onclick="toggleZoom('imagen1')">
+        <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion1')">Übersetzung</button>
+        <div id="traduccion1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal('traduccion1')">&times;</span>
+                <p>Chilenisches Heer<br><br>
+
+                    Da der Unteroffizier<br>
+                    Herr DARIO ALEJANDRO PRADO PEÑALOZA<br>
+                    
+                    erfolgreich die Ausbildung an der UNTEROFFIZIERSCHULE abgeschlossen hat und gemäß den<br>
+                    geltenden Gesetzen und Vorschriften das Diplom als Waffenmechaniker und Sprengstoffmanipulator erhält.<br>
+                    Dies wird im Diplombuch der Schule und in seiner Dienstakte vermerkt und registriert.<br><br>
+                    
+                    Gegeben zu Santiago de Chile, am ersten Tag des Monats Januar zweitausendsiebzehn.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Segundo diploma -->
+    <div class="diploma-container">
+        <img id="imagen2" class="diploma" src="IMG/2.jpg" alt="Diploma 2" onclick="toggleZoom('imagen2')">
+        <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion2')">Übersetzung</button>
+        <div id="traduccion2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal('traduccion2')">&times;</span>
+                <p>Chilenisches Heer
+
+                    Der Kommandant des Personalkommandos<br><br>
+                    
+                    Da der Cabo Dragoneante<br><br>
+                    Herr Dario Alejandro Prado Peñaloza<br>
+                    die gesetzlich vorgeschriebenen Anforderungen erfüllt, wird ihm mit<br>
+                    Datum 1. Januar 2017 der Dienstgrad eines Cabo verliehen.<br>
+                    
+                    DAHER ordne ich an, dass ihm dieser Dienstgrad anerkannt wird und gewähre ihm die Rechte, die diesem Titel zustehen.<br>
+                    
+                    Gegeben zu Santiago de Chile, am sechzehnten Tag des Monats Dezember zweitausendsechzehn.<br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Tercer diploma -->
+    <div class="diploma-container">
+        <img id="imagen3" class="diploma" src="IMG/3.jpg" alt="Diploma 3" onclick="toggleZoom('imagen3')">
+        <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion3')">Übersetzung</button>
+        <div id="traduccion3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal('traduccion3')">&times;</span>
+                <p>IWI<br><br>
+
+                    Zertifikat<br>
+                    Hiermit wird bescheinigt, dass der Schüler<br>
+                    CBO. Dario Prado Peñaloza<br><br>
+                    
+                    Erfolgreich eine Schulung abgeschlossen hat<br>
+                    für die folgenden Produkte:<br><br>
+                    
+                    Granatwerfer 40x46mm<br>
+                    IWI UBGL-40<br><br>
+                    
+                    Das Training beinhaltet:<br>
+                    Waffenmechaniker-Stufe<br><br>
+                    
+                    Chilenisches Heer, August 2017
+                    </p>
+            </div>
+        </div>
+    </div>
+    <!-- Cuarto diploma -->
+    <div class="diploma-container">
+        <img id="imagen4" class="diploma" src="IMG/4.jpg" alt="Diploma 4" onclick="toggleZoom('imagen4')">
+        <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion4')">Übersetzung</button>
+        <div id="traduccion4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal('traduccion4')">&times;</span>
+                <p>Dario Prado Peñaloza<br><br>
+
+                    RUT: 18.081.524-4<br><br>
+                    
+                    hat die akademischen Anforderungen des<br>
+                    DIPLOMKURSES FÜR DIE FEHLERDIAGNOSE VON ELEKTRONISCHEN UND HYDRAULISCHEN SYSTEMEN FÜR WAFFEN
+                    erfüllt.<br>
+                    durchgeführt in der Schulungseinrichtung in der Metropolregion, zwischen dem 11. Juli und 04. August 2016, mit einer Dauer von 150 Stunden.<br><br>
+                    
+                    Santiago, 18. August 2016
+                    </p>
+            </div>
+        </div>
+    </div>
+    <!-- Quinto diploma -->
+    <div class="diploma-container">
+        <img id="imagen5" class="diploma" src="IMG/5.jpg" alt="Diploma 5" onclick="toggleZoom('imagen5')">
+        <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion5')">Übersetzung</button>
+        <div id="traduccion5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal('traduccion5')">&times;</span>
+                <p>Zertifikat<br><br>
+
+                    Dario Prado Peñaloza<br>
+                    RUT: 18.081.524-4<br>
+                    hat den Kurs<br>
+                    ERSTE HILFE<br>
+                    bestanden,<br>
+                    durchgeführt am 24. und 25. Januar 2013, mit einer Dauer von 16 Stunden.<br><br>
+                    
+                    Santiago, 28. Januar 2013
+                    </p>
+            </div>
+        </div>
+    </div>
+     <!-- Sexto diploma -->
+     <div class="diploma-container">
+        <img id="imagen6" class="diploma" src="IMG/6.jpg" alt="Diploma 6" onclick="toggleZoom('imagen6')">
+        <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion6')">Übersetzung</button>
+        <div id="traduccion6" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal('traduccion6')">&times;</span>
+                <p>Zertifikat<br><br>
+                    Dieses Dokument bescheinigt, dass:<br><br>
+                    Herr Dario Prado Peñaloza<br>
+                    ESC INF- CBO<br><br>
+                    den Kurs Waffenmechaniker für das FN MINIMI 5.56 Maschinengewehr H TR<br>
+                    vom 20. bis 21. März 2017 erfolgreich absolviert hat<br>
+                    an der Infanterieschule (San Bernardo - CHILE).
+                    
+                    Santiago, 28. Januar 2013
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</body>
+</html>
