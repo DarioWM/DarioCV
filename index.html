@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -8,23 +7,24 @@
 </head>
 <body>
     <nav class="navbar">
-        <button class="contacto-btn" onclick="toggleContacto()">Kontaktinformationen</button>
         <div class="navbar-header">
             <h1>Dario Prado</h1> <!-- Tu nombre en el Navbar -->
         </div>
-        <div id="contacto-dropdown" class="contacto-dropdown">
-            <span class="close" onclick="toggleContacto()">&times;</span>
-            <p>Adresse: Torgauer Straße 48, 04315, Leipzig.</p>
-            <p>Telefon: +49 1512 4164649</p>
-            <p>Linkedin: <a href="https://www.linkedin.com/in/dario-prado-penaloza/">Link</a></p>
-            <p>Nationalität: Chilenisch</p>
-            <p>E-Mail: Cattus@Live.cl</p>
-        </div>
+        <button class="contacto-btn" onclick="toggleContacto()">Kontaktinformationen</button>
     </nav>
 
-    <!-- Contenido de tu página -->
+    <div id="contacto-dropdown" class="contacto-dropdown">
+        <span class="close" onclick="cerrarContacto()">&times;</span>
+        <p>Adresse: Torgauer Straße 48, 04315, Leipzig.</p>
+        <p>Telefon: +49 1512 4164649</p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/dario-prado-penaloza/">Link</a></p>
+        <p>Nationalität: Chilenisch</p>
+        <p>E-Mail: Cattus@Live.cl</p>
+    </div>
+
     <h1 class="main-title">Zeugnisse</h1>
     <p class="texto">Klicken Sie auf die Bilder, um sie zu vergrößern</p>
+
     <!-- Primer diploma -->
     <div class="diploma-container">
         <img id="imagen1" class="diploma" src="1.jpg" alt="Diploma 1" onclick="toggleZoom('imagen1')">
@@ -45,7 +45,7 @@
     </div>
     <!-- Segundo diploma -->
     <div class="diploma-container">
-        <img id="imagen7" class="diploma" src="7.jpg" alt="Diploma 7" onclick="toggleZoom('imagen7')">
+        <img id="imagen7" class="diploma" src="2.jpg" alt="Diploma 7" onclick="toggleZoom('imagen7')">
         <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion7')">Übersetzung</button>
         <div id="traduccion7" class="modal">
             <div class="modal-content">
@@ -62,7 +62,7 @@
     </div>
     <!-- Sexto diploma -->
     <div class="diploma-container">
-        <img id="imagen6" class="diploma" src="6.jpg" alt="Diploma 6" onclick="toggleZoom('imagen6')">
+        <img id="imagen6" class="diploma" src="3.jpg" alt="Diploma 6" onclick="toggleZoom('imagen6')">
         <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion6')">Übersetzung</button>
         <div id="traduccion6" class="modal">
             <div class="modal-content">
@@ -81,7 +81,7 @@
     </div>
     <!-- Tercer diploma -->
     <div class="diploma-container">
-        <img id="imagen3" class="diploma" src="3.jpg" alt="Diploma 3" onclick="toggleZoom('imagen3')">
+        <img id="imagen3" class="diploma" src="4.jpg" alt="Diploma 3" onclick="toggleZoom('imagen3')">
         <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion3')">Übersetzung</button>
         <div id="traduccion3" class="modal">
             <div class="modal-content">
@@ -103,7 +103,7 @@
     </div>
     <!-- Cuarto diploma -->
     <div class="diploma-container">
-        <img id="imagen4" class="diploma" src="4.jpg" alt="Diploma 4" onclick="toggleZoom('imagen4')">
+        <img id="imagen4" class="diploma" src="5.jpg" alt="Diploma 4" onclick="toggleZoom('imagen4')">
         <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion4')">Übersetzung</button>
         <div id="traduccion4" class="modal">
             <div class="modal-content">
@@ -121,7 +121,7 @@
     </div>
     <!-- Quinto diploma -->
     <div class="diploma-container">
-        <img id="imagen5" class="diploma" src="5.jpg" alt="Diploma 5" onclick="toggleZoom('imagen5')">
+        <img id="imagen5" class="diploma" src="6.jpg" alt="Diploma 5" onclick="toggleZoom('imagen5')">
         <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion5')">Übersetzung</button>
         <div id="traduccion5" class="modal">
             <div class="modal-content">
@@ -139,7 +139,7 @@
         </div>
     </div>
     <div class="diploma-container">
-        <img id="imagen2" class="diploma" src="2.jpg" alt="Diploma 2" onclick="toggleZoom('imagen2')">
+        <img id="imagen2" class="diploma" src="7.jpg" alt="Diploma 2" onclick="toggleZoom('imagen2')">
         <button class="traduccion-btn" onclick="mostrarTraduccion('traduccion2')">Übersetzung</button>
         <div id="traduccion2" class="modal">
             <div class="modal-content">

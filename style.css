@@ -152,6 +152,7 @@ h1, .main-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Permitir que los elementos del navbar se envuelvan */
 }
 
 .navbar-header h1 {
@@ -182,9 +183,11 @@ h1, .main-title {
 /* Estilos para el menú desplegable de información de contacto */
 .contacto-dropdown {
     display: none;
-    position: absolute;
+    position: fixed; /* Cambiado a fixed para asegurar visibilidad */
+    top: 0; /* Ajustar según necesidades de diseño */
+    left: 0; /* Ajustar según necesidades de diseño */
     background-color: #f9f9f9;
-    min-width: 200px; /* Ancho mínimo para asegurar que no se corte */
+    width: 100%; /* Ancho completo para dispositivos móviles */
     box-shadow: 0px 8px 16px 0px rgba(42, 71, 116, 0.2);
     padding: 12px 16px;
     z-index: 1;
@@ -192,18 +195,16 @@ h1, .main-title {
 
 /* Estilos para el menú desplegable de información de contacto en dispositivos pequeños */
 @media screen and (max-width: 600px) {
-    .navbar {
-        position: relative;
-    }
     .contacto-dropdown {
-        position: absolute;
-        top: 50px;
-        right: 0;
-        min-width: 200px; /* Ancho mínimo para asegurar que no se corte */
-        max-width: 100%;
+        position: absolute; /* Ajustado a absolute para ajustarse al diseño móvil */
+        top: 60px; /* Ajuste según necesidades de diseño */
+        right: 0; /* Ajuste según necesidades de diseño */
+        width: auto; /* Ajuste según necesidades de diseño */
+        max-width: 100%; /* Ajuste según necesidades de diseño */
         box-sizing: border-box;
     }
 }
+
 
 .texto {
     text-align: center;
