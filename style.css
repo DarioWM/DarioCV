@@ -111,6 +111,10 @@ h1, .main-title {
 
     .navbar-header h1 {
         font-size: 30px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
     }
 }
 
@@ -134,6 +138,10 @@ h1, .main-title {
 
     .navbar-header h1 {
         font-size: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
     }
 }
 
@@ -152,6 +160,10 @@ h1, .main-title {
     font-size: 50px;
     font-weight: normal;
     text-align: center;
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Oculta el texto que se sale del contenedor */
+    text-overflow: ellipsis; /* Añade puntos suspensivos (...) si el texto es demasiado largo */
+    width: 100%;
 }
 
 .contacto-btn {
@@ -172,7 +184,7 @@ h1, .main-title {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 200px; /* Ancho mínimo para asegurar que no se corte */
     box-shadow: 0px 8px 16px 0px rgba(42, 71, 116, 0.2);
     padding: 12px 16px;
     z-index: 1;
@@ -187,6 +199,9 @@ h1, .main-title {
         position: absolute;
         top: 50px;
         right: 0;
+        min-width: 200px; /* Ancho mínimo para asegurar que no se corte */
+        max-width: 100%;
+        box-sizing: border-box;
     }
 }
 
