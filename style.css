@@ -1,14 +1,12 @@
 /* Estilos generales */
 body {
     background-color: #ede9f3;
-}
-body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-h1 {
+h1, .main-title {
     text-align: center;
     color: #333;
 }
@@ -57,7 +55,6 @@ h1 {
     }
 }
 
-
 /* Estilos para modal */
 .modal {
     display: none;
@@ -99,6 +96,22 @@ h1 {
     .diploma {
         max-width: 70%;
     }
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    .texto {
+        font-size: 20px;
+    }
+
+    .contacto-btn {
+        font-size: 20px;
+    }
+
+    .navbar-header h1 {
+        font-size: 30px;
+    }
 }
 
 /* Estilos para pantalla muy pequeña */
@@ -106,7 +119,24 @@ h1 {
     .diploma {
         max-width: 90%;
     }
+
+    .main-title {
+        font-size: 25px;
+    }
+
+    .texto {
+        font-size: 18px;
+    }
+
+    .contacto-btn {
+        font-size: 18px;
+    }
+
+    .navbar-header h1 {
+        font-size: 25px;
+    }
 }
+
 .navbar {
     background-color: #28374b;
     overflow: hidden;
@@ -119,7 +149,7 @@ h1 {
 .navbar-header h1 {
     color: white;
     margin: 0;
-    font-size: 50px; /* Aumentamos el tamaño de fuente */
+    font-size: 50px;
     font-weight: normal;
     text-align: center;
 }
@@ -159,6 +189,7 @@ h1 {
         right: 0;
     }
 }
+
 .texto {
     text-align: center;
 }

@@ -27,11 +27,22 @@ function toggleZoom(imageId) {
     }
 }
 
+// Función para mostrar y ocultar el menú de contacto
 function toggleContacto() {
     var dropdown = document.getElementById("contacto-dropdown");
     if (dropdown.style.display === "block") {
         dropdown.style.display = "none";
     } else {
         dropdown.style.display = "block";
+    }
+}
+
+// Cerrar el menú de contacto al hacer clic fuera de él
+window.onclick = function(event) {
+    var dropdown = document.getElementById("contacto-dropdown");
+    if (!event.target.matches('.contacto-btn')) {
+        if (dropdown.style.display === "block") {
+            dropdown.style.display = "none";
+        }
     }
 }
