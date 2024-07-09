@@ -1,6 +1,5 @@
-/* Estilos generales */
 body {
-    background-color: #ede9f3;
+    background-color: #ffffff;
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,7 +7,7 @@ body {
 
 h1, .main-title {
     text-align: center;
-    color: #333;
+    color: #253741;
 }
 
 .diploma-container {
@@ -18,10 +17,10 @@ h1, .main-title {
 }
 
 .diploma {
+    background-color: #4c9baf;
     max-width: 30%;
-    border: 10px solid #839fb1;
-    padding-left: 1%;
-    padding-right: 1%;
+    filter: hue-rotate(20);
+    padding: 0.2%;
     transition: max-width 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -40,18 +39,18 @@ h1, .main-title {
     font-size: 16px;
     cursor: pointer;
     margin-top: 1px;
-    animation: cambioColor 0.7s infinite alternate; /* Agregamos la animación */
+    animation: cambioColor 2s infinite; /* tiempo de la animación */
 }
 
 @keyframes cambioColor {
     0% {
-        background-color: #4c7aaf; /* Color inicial */
+        background-color: #8cd7e4; /* Color inicial */
     }
     50% {
-        background-color: #4c66af; /* Color intermedio */
+        background-color: #7ec2ce; /* Color intermedio */
     }
     100% {
-        background-color: #6a4caf; /* Color final */
+        background-color: #6fadb8; /* Color final */
     }
 }
 
@@ -146,7 +145,7 @@ h1, .main-title {
 }
 
 .navbar {
-    background-color: #28374b;
+    background-color: #a2c0c7;
     overflow: hidden;
     padding: 10px 20px;
     display: flex;
